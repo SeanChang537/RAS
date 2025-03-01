@@ -53,6 +53,7 @@ def RAS_model(t:float, y:np.array, WT:KRAS_Variant, Mutant:KRAS_Variant, state_p
     kdissEffV=Mutant.k_d_Eff
 
     # Rate Expressions TODO: documentation
+    
     R1=(VmaxD*GD/KmD-VmaxT*GT/KmT)/(1+GD/KmD+GT/KmT+GDV/KmDV+GTV/KmTV)
     R2=Vmax*GT/(Km*(1+GTV/KmV)+GT)
     R3=kint*GT
